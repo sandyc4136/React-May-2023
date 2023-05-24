@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Button from './Components/Button';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export const Hello = ()=>{
+    let a=10, b=5
+
+    return (
+    <div>
+        <h2 style={{color:"tomato", textAlign:"center"}}>The value of a = {a}</h2>
+        <h1 class="heading"  > Hello world</h1>
+        <p> How are You? </p>
+        <p> { a>b? "a is greater " : "b is greater " }</p>
+        <Button/>
+        <Button/>
+        <Button/>
     </div>
-  );
+    )
 }
 
-export default App;
+// export default Hello   // "default export"
