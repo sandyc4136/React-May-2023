@@ -1,14 +1,25 @@
 import React from 'react'
 
-const Button = (props) => {
+const Button = ({buttonColor,buttonText, children}) => {
     return (
         <div>
-            <button style = {{backgroundColor : props.buttonColor}}> 
-            {props.buttonText} 
+            <button style = {{color : buttonColor}}> 
+            {buttonText} 
             </button>
-            {props.children}
+            {children}
         </div>
     )
+
+
+
+    // return (
+    //     <div>
+    //         <button style = {{backgroundColor : props.buttonColor}}> 
+    //         {props.buttonText} 
+    //         </button>
+    //         {props.children}
+    //     </div>
+    // )
 }
 
 export default Button;
